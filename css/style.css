@@ -1,0 +1,482 @@
+/* ===== 1. Global & Variables (Sleek Light Mode) ===== */
+:root {
+    --primary-color: #0066cc; /* Professional, clean blue */
+    --primary-hover: #0052a3;
+    
+    --bg-color: #f8f9fa;      /* Very light grey page background */
+    --card-color: #ffffff;     /* Pure white for cards */
+    
+    --text-color: #333;      /* Dark text for readability */
+    --text-light: #555;        /* Lighter text for sub-headings */
+    
+    --border-color: #e0e0e0;   /* A very light, subtle border */
+    --image-bg: #f4f4f4;       /* Background for contained images */
+    --shadow-soft: 0 4px 12px rgba(0,0,0,0.05);
+    --shadow-lift: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* ===== 2. Navigation Bar (Frosted Glass - Light) ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 2.5rem;
+}
+
+.nav-links li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* ===== 3. Page Sections (WIDER) ===== */
+.content-wrapper {
+    max-width: 1400px; /* Wide layout */
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.page-section {
+    padding-top: 80px;
+    margin-bottom: 4rem;
+}
+
+/* ===== 4. About Me Section ===== */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-text {
+    flex: 2; 
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.profile-pic {
+    flex: 0 0 350px; 
+    height: 450px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    border: 5px solid var(--card-color);
+    box-shadow: var(--shadow-soft);
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+/* ===== 5. Projects Section (Updated 1-Column) ===== */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #eee;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; 
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row; /* --- CHANGED: Explicitly set text-left, image-right --- */
+    gap: 2.5rem;
+    align-items: flex-start; /* Top-aligned text */
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lift);
+}
+
+.project-image {
+    flex: 1.2; /* This is the DEFAULT image width ratio */
+    min-width: 0; 
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Fits image inside, no cutting */
+    border-radius: 6px;
+    display: block;
+    background-color: var(--image-bg); /* Clean box background */
+    max-height: 500px; /* Constrains tall images */
+}
+
+.image-grid-2-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.image-grid-2-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.image-grid-3-mixed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.image-grid-3-mixed .img-span-2 {
+    grid-column: span 2;
+}
+
+.image-grid-4-square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.project-info {
+    flex: 1.0; /* This is the DEFAULT text width ratio */
+    min-width: 0; 
+    padding-top: 1rem; 
+}
+
+.project-info ul {
+    padding-left: 20px;
+    margin: 1.5rem 0;
+    color: var(--text-light);
+}
+
+.project-info li {
+    margin-bottom: 0.75rem;
+}
+
+.project-category {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-info h3 {
+    font-size: 1.75rem;
+    margin: 0.5rem 0 0 0;
+    color: var(--text-color);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.project-tags span {
+    background-color: var(--bg-color);
+    border: 1px solid #eee;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.modal-btn {
+    align-self: flex-start; 
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/* ===== 6. Resume Section ===== */
+#resume {
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 1rem 0 2rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: var(--primary-hover);
+    color: #fff;
+}
+
+.resume-preview {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.resume-preview img {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+}
+
+/* ===== 7. Project Modal (Light) ===== */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modal-content {
+    background-color: var(--card-color);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+    max-height: 90vh; 
+    overflow-y: auto; 
+}
+
+.modal-close {
+    color: #aaa;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal-close:hover,
+.modal-close:focus {
+    color: var(--text-color);
+}
+.modal-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+.modal-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+.modal-link:hover {
+    background-color: var(--primary-hover);
+    color: #fff;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* ===== 8. Responsive Design ===== */
+@media (max-width: 900px) {
+    .content-wrapper {
+        padding: 0 1rem; 
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .profile-pic {
+        flex: none; 
+        width: 100%;
+        max-width: 350px;
+        height: 450px;
+    }
+
+    .project-item {
+        flex-direction: column; /* Always stack on mobile */
+    }
+    
+    .project-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .project-info {
+        flex: none;
+        width: auto; 
+        padding-top: 0; /* Reset padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    .profile-pic {
+        height: 350px;
+    }
+}
+
+/* ===== 9. CUSTOM SIZING CLASSES ===== */
+/* --- NEW: Your custom toolkit --- */
+
+/* For smaller images (Projects 2 & 3) */
+.project-small .project-info {
+    flex: 1.1;
+}
+.project-small .project-image {
+    flex: 0.9; 
+}
+
+/* For larger images (Projects 5 & 6) */
+.project-large .project-info {
+    flex: 1;
+}
+.project-large .project-image {
+    flex: 1.5; 
+}

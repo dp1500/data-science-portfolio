@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devansh - Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-wrapper">
+
+        <section id="about" class="page-section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h3>Hi, I'm Devansh</h3>
+                    <p>
+                        I am a Data [Scientist/Analyst] passionate about finding stories in data and building solutions that drive real-world impact.
+                    </p>
+                    <p>
+                        My experience lies in machine learning, statistical analysis, and creating effective data visualizations that are clear, concise, and actionable.
+                    </p>
+                    <p>
+                        I thrive on solving complex problems and am currently seeking opportunities to apply my skills to new and challenging data-driven projects.
+                    </p>
+                    <div class="social-links">
+                        <a href="[Your LinkedIn URL]" target="_blank">LinkedIn</a>
+                        <a href="[Your GitHub URL]" target="_blank">GitHub</a>
+                        <a href="[Your Tableau URL]" target="_blank">Tableau Public</a>
+                    </div>
+                </div>
+                <img src="assets\images\portfolio try 1.JPG" alt="A professional headshot of [Your Name]" class="profile-pic">
+            </div>
+        </section>
+
+        <section id="projects" class="page-section">
+            <h2>My Projects</h2>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="nlp">NLP / Gen AI</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="quant">Quant Analysis</button>
+                <button class="filter-btn" data-filter="competition">Competitions</button>
+            </div>
+
+            <div class="project-list">
+                
+                    <div class="project-item" data-category="nlp clustering llm genai">
+                    <div class="project-image">
+                        <div class="image-grid-2-side">
+                            <img src="assets/projectPictures/Enview/1.jpg" alt="EnView project diagram">
+                            <img src="assets/projectPictures/Enview/2.jpg" alt="EnView UI">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">NLP / Gen AI</span>
+                        <h3>EnView: AI News Analysis Engine</h3>
+                        <ul>
+                            <li>Engineered an end-to-end AI pipeline (NLP, Clustering, LLM) to process, group, and analyze 5,000+ daily news articles from 10+ sources.</li>
+                            <li>Utilized cutting-edge clustering to identify and group articles on the same topic from different publishers.</li>
+                            <li>Deployed an LLM to generate QnA summaries and perform bias analysis, highlighting contrasting narratives and information across sources.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>NLP</span>
+                            <span>Clustering</span>
+                            <span>LLM</span>
+                            <span>Gen AI</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-1">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-item " data-category="quant analysis statistical-testing viz">
+                    <div class="project-image">
+                        <div class="image-grid-2-stack">
+                            <img src="assets/projectPictures/AdvancedNiftyForecast/mid term projection.png" alt="Nifty mid-term forecast">
+                            <img src="assets/projectPictures/AdvancedNiftyForecast/weekly bias.png" alt="Nifty weekly bias">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Quantitative Analysis</span>
+                        <h3>Nifty Weekly & Monthly Forecast</h3>
+                        <ul>
+                            <li>Conducted quantitative and technical analysis on 1 year of Nifty data to forecast weekly and monthly market direction.</li>
+                            <li>Identified a statistically significant mean-reversion pattern, providing a "BEARISH" bias with a mid-term equilibrium target.</li>
+                            <li>Developed actionable trading strategies based on resistance levels, low ADX momentum, and overbought log-price z-score readings.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Stock Market</span>
+                            <span>Quant Analysis</span>
+                            <span>Statistical Testing</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-2">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-item project-small" data-category="cv yolo flask rest-api">
+                    <div class="project-image">
+                        <div class="image-grid-2-stack">
+                            <img src="assets/projectPictures/smartHomeSecurity/fire detection.jpg" alt="Fire detection CV">
+                            <img src="assets/projectPictures/smartHomeSecurity/face detection.jpg" alt="Face detection CV">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Computer Vision</span>
+                        <h3>Smart Home Security AI</h3>
+                        <ul>
+                            <li>Developed a real-time, multi-threaded CV system for smart home security, detecting intruders and fire with immediate mobile app alerts.</li>
+                            <li>Integrated YOLO object detection, live face recognition, and a custom-trained fire model using OpenCV, CUDA, and PyTorch.</li>
+                            <li>Orchestrated a high-speed Flask (REST API / WebSocket) backend to stream detection data to a Flutter app, ensuring instantaneous alerts.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Computer Vision</span>
+                            <span>YOLO</span>
+                            <span>OpenCV</span>
+                            <span>Flask</span>
+                            <span>CUDA</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-3">View Case Study</button>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="ml feature-engineering">
+                    <div class="project-image">
+                        <div class="image-grid-2-side">
+                            <img src="assets/projectPictures/football/1.png" alt="Premier League table prediction">
+                            <img src="assets/projectPictures/football/2.png" alt="Premier League match simulator">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Machine Learning</span>
+                        <h3>EPL Season Simulation Model</h3>
+                        <ul>
+                            <li>Built a robust multiclass ML model (AdaBoost) to simulate the 380-match 2021-22 Premier League season, accurately predicting 1st, 2nd, and 4th place.</li>
+                            <li>Trained the classifier on 4 seasons of match and player data to predict specific scorelines (home/away goals).</li>
+                            <li>Engineered predictive features from player ratings, team formations, and historical match-ups to fuel the model's accuracy.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Machine Learning</span>
+                            <span>AdaBoost</span>
+                            <span>Feature Engineering</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-4">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-item project-large" data-category="analysis viz market-basket">
+                    <div class="project-image">
+                        <div class="image-grid-3-mixed">
+                            <img src="assets/projectPictures/OrganicFoodStore/market basket analysis.png" alt="Market basket analysis" class="img-span-2">
+                            <img src="assets/projectPictures/OrganicFoodStore/rainfal 2.png" alt="Rainfall analysis 1">
+                            <img src="assets/projectPictures/OrganicFoodStore/rainfall analysis.png" alt="Rainfall analysis 2">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Business / Data Analysis</span>
+                        <h3>Organic Food Store SKU & Sales Analysis</h3>
+                        <ul>
+                            <li>Led a data-to-decision capstone project by engineering and analyzing primary business data to identify underperforming SKUs.</li>
+                            <li>Applied Market Basket Analysis (Apriori algorithm) to uncover product associations, driving targeted marketing campaigns.</li>
+                            <li>Identified a monsoon-driven sales drop via trend analysis and proposed a data-driven solution: a new delivery channel with low seasonal correlation.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Market Basket Analysis</span>
+                            <span>Clustering</span>
+                            <span>SKU Optimization</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-5">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-item project-large" data-category="analysis viz churn">
+                    <div class="project-image">
+                        <div class="image-grid-4-square">
+                            <img src="assets/projectPictures/2ByteCode/Average screen time per screen analysis.jpg" alt="Screen time analysis">
+                            <img src="assets/projectPictures/2ByteCode/Screen vissits analysis.jpg" alt="Screen visits analysis">
+                            <img src="assets/projectPictures/2ByteCode/Screens at which user ecited apps.jpg" alt="User exit analysis">
+                            <img src="assets/projectPictures/2ByteCode/Session analysis.jpg" alt="Session analysis">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Business Data Analysis</span>
+                        <h3>User Retention & Churn Analysis for App Startup</h3>
+                        <ul>
+                            <li>Consulted for an app startup, conducting in-depth user behavior analysis (screen frequency, churn, retention) in Python to identify drop-off points.</li>
+                            <li>Pinpointed high-churn screens and proposed data-driven optimizations, such as reducing ad frequency on specific pages.</li>
+                            <li>Delivered targeted strategies, including user classification, to enhance user satisfaction and reduce churn rate.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Churn Analysis</span>
+                            <span>Retention</span>
+                            <span>Data Visualization</span>
+                            <span>Python</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-6">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="nlp ml rest-api">
+                    <div class="project-image">
+                        <div class="image-grid-3-mixed">
+                            <img src="assets/projectPictures/movie recommender system/1.png" alt="Movie recommender UI 1">
+                            <img src="assets/projectPictures/movie recommender system/1.png" alt="Movie recommender UI 2">
+                            <img src="assets/projectPictures/movie recommender system/cosine similarity.png" alt="Cosine similarity diagram" class="img-span-2">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">NLP / Machine Learning</span>
+                        <h3>Movie Recommendation System</h3>
+                        <ul>
+                            <li>Built a content-based movie recommendation system using NLP (TF-IDF) and Cosine Similarity to find similar movies based on plot, cast, and genres.</li>
+                            <li>Developed a Flask backend with a REST API to serve real-time recommendations (poster, cast, release date) to a mobile app front-end.</li>
+                            <li>Achieved high-speed performance, delivering a full slate of similar movie recommendations in under a second.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Recommendation System</span>
+                            <span>NLP</span>
+                            <span>Cosine Similarity</span>
+                            <span>Flask</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-7">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-item project-large" data-category="ml competition eda viz feature-engineering">
+                    <div class="project-info">
+                        <span class="project-category">Data Science Competition</span>
+                        <h3>Dengue Cases Prediction</h3>
+                        <ul>
+                            <li>Achieved a **Top 3.5% global rank (500 / 15,000)** in an international DataDriven competition.</li>
+                            <li>Conducted exploratory data analysis (EDA) and performed advanced feature engineering to create high-impact, predictive features.</li>
+                            <li>Utilized Tree-based classifiers (e.g., Random Forest, XGBoost) on the engineered features to accurately forecast weekly dengue cases.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Competition</span>
+                            <span>Feature Engineering</span>
+                            <span>EDA</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-8">View Case Study</button>
+                    </div>
+                    <div class="project-image">
+                        <div class="image-grid-3-mixed">
+                            <img src="assets/projectPictures/dengueCasesPredictions/Cases each year as weeks.png" alt="Dengue cases by week" class="img-span-2">
+                            <img src="assets/projectPictures/dengueCasesPredictions/correlation of raw features.png" alt="Raw feature correlation">
+                            <img src="assets/projectPictures/dengueCasesPredictions/correlation of enginered features.png" alt="Engineered feature correlation">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item project-small" data-category="statistical-modeling competition eda viz feature-engineering">
+                    <div class="project-info">
+                        <span class="project-category">Data Science Competition</span>
+                        <h3>Store Sales - Time Series Forecasting</h3>
+                        <ul>
+                            <li>Achieved a **Top 12% world rank (83 / 722)** in a time series forecasting competition.</li>
+                            <li>Performed meticulous statistical analysis and visualization on complex time series data to identify seasonality, trends, and cyclical patterns.</li>
+                            <li>Implemented an Exponential Smoothing model, which outperformed more complex models by accurately capturing the core data components.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Competition</span>
+                            <span>Time Series</span>
+                            <span>Statistical Modeling</span>
+                            <span>EDA</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-9">View Case Study</button>
+                    </div>
+                    <div class="project-image">
+                        <img src="http://googleusercontent.com/image_collection/image_retrieval/10453935705947209988_0" alt="Time series forecast chart">
+                    </div>
+                </div>
+
+                <div class="project-item project-small" data-category="ml competition eda viz feature-engineering pca">
+                    <div class="project-info">
+                        <span class="project-category">Data Science Competition</span>
+                        <h3>Student Enrolment Status Prediction</h3>
+                        <ul>
+                            <li>Predicted student dropout with a high F1-score of 0.76 in a multi-class classification challenge.</li>
+                            <li>Utilized EDA and advanced feature engineering, including PCA for dimensionality reduction, outlier removal, and SMOTE for oversampling.</li>
+                            <li>Implemented a Gradient Boosting model to effectively classify student enrolment status based on the refined dataset.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Competition</span>
+                            <span>Machine Learning</span>
+                            <span>PCA</span>
+                            <span>Oversampling</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-10">View Case Study</button>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/projectPictures/student droput prediction/Graphical-scheme-of-XGBoost-model.png" alt="XGBoost model diagram">
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="ml competition eda viz feature-engineering hyperparamter-tuning">
+                    <div class="project-info">
+                        <span class="project-category">Data Science Competition</span>
+                        <h3>Optiver - Trading at the Close</h3>
+                        <ul>
+                            <li>Achieved a world rank of 2838/4436 in a highly complex quantitative finance (HFT) competition by Optiver.</li>
+                            <li>Applied advanced feature engineering techniques to a noisy, high-frequency dataset to predict closing stock prices.</li>
+                            <li>Implemented an LGBM (Light Gradient Boosting) model and utilized Optuna for efficient hyperparameter tuning to optimize model parameters.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Competition</span>
+                            <span>LGBM</span>
+                            <span>Optuna</span>
+                            <span>Feature Engineering</span>
+                        </div>
+                        <button class="modal-btn" data-modal-id="modal-11">View Case Study</button>
+                    </div>
+                    <div class="project-image">
+                        <div class="image-grid-2-side">
+                            <img src="assets/projectPictures/Optiver - Trading at the Close/raw featuer importance.png" alt="Raw feature importance">
+                            <img src="assets/projectPictures/Optiver - Trading at the Close/engineered features.png" alt="Engineered feature importance">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="resume" class="page-section">
+            <h2>My Resume</h2>
+            <p>A brief overview of my professional experience, skills, and education.</p>
+
+            <div class="resume-preview">
+                <img src="assets\projectPictures\resume\resume pic.png" alt="A preview image of [Your Name]'s resume">
+            </div>
+
+
+            <a href="assets\resume\Resume Devansh (1).pdf" class="download-btn" download>
+                Download PDF
+            </a>
+        </section>
+
+    </main>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        
+        <div id="modal-1-content">
+            <h2>EnView: AI News Analysis Engine</h2>
+            <img src="assets/projectPictures/Enview/1.jpg" class="modal-img" alt="EnView project diagram">
+            <img src="assets/projectPictures/Enview/2.jpg" class="modal-img" alt="EnView UI">
+            <h3>The Challenge</h3>
+            <p>The modern news cycle is overwhelming, with thousands of articles from different sources covering the same event. It's difficult to get a complete picture and identify media bias.</p>
+            <h3>My Solution</h3>
+            <p>I built an AI engine that ingests over 5,000 articles daily.
+               <br>1. <strong>Clustering:</strong> It uses NLP and clustering to automatically group articles about the same topic.
+               <br>2. <strong>Summarization:</strong> An LLM generates QnA-style summaries for each cluster.
+               <br>3. <strong>Analysis:</strong> The LLM highlights contrasting information, biases, and narratives, giving the user a 360-degree view of the topic.
+            </p>
+            <a href="[GitHub Link]" class="modal-link" target="_blank">View Code on GitHub</a>
+        </div>
+
+        <div id="modal-2-content">
+            <h2>Nifty Weekly & Monthly Forecast</h2>
+            <img src="assets/projectPictures/AdvancedNiftyForecast/mid term projection.png" class="modal-img" alt="Nifty mid-term forecast">
+            <img src="assets/projectPictures/AdvancedNiftyForecast/weekly bias.png" class="modal-img" alt="Nifty weekly bias">
+            <h3>The Challenge</h3>
+            <p>To develop a data-driven, non-emotional forecast for the Nifty index, backed by statistical evidence rather than just opinion.</p>
+            <h3>My Solution</h3>
+            <p>I performed a deep quantitative analysis of the last year of Nifty data.
+               <br>1. <strong>Mean Reversion:</strong> Identified a statistically significant mean-reversion pattern suggesting a "BEARISH" mid-term bias.
+               <br>2. <strong>Key Indicators:</strong> Analysis showed a failure to break all-time-high resistance, low momentum (ADX), and an overbought z-score, all reinforcing a bearish weekly outlook.
+               <br>3. <strong>Actionable Strategy:</strong> The data suggested a clear strategy: "Short NIFTY futures / Sell monthly or weekly CALL options" with z-score-guided entries.
+            </p>
+            <a href="[GitHub Link]" class="modal-link" target="_blank">View Code on GitHub</a>
+        </div>
+        
+        <div id="modal-3-content">
+            <h2>Smart Home Security AI</h2>
+            <img src="assets/projectPictures/smartHomeSecurity/fire detection.jpg" class="modal-img" alt="Fire detection CV">
+            <img src="assets/projectPictures/smartHomeSecurity/face detection.jpg" class="modal-img" alt="Face detection CV">
+            <h3>The Challenge</h3>
+            <p>Standard security systems are reactive. The goal was to build a *proactive* AI system that could identify threats (intruders, fire) in real-time and alert a user instantly.</p>
+            <h3>My Solution</h3>
+            <p>I built a multi-layered computer vision system.
+               <br>1. <strong>Threat Detection:</strong> Integrated YOLO for general object detection, a custom-trained model for fire, and live face recognition to identify known vs. unknown individuals.
+               <br>2. <strong>Performance:</strong> Used multi-threading and CUDA to optimize the models for high-speed, real-time processing.
+               <br>3. <strong>Alerts:</strong> Developed a Flask API backend that uses WebSockets to push immediate, live-feed alerts to a Flutter mobile app the moment a threat is detected.
+            </p>
+            <a href="[GitHub Link]" class="modal-link" target="_blank">View Code on GitHub</a>
+        </div>
+
+        <div id="modal-4-content">
+            <h2>EPL Season Simulation Model</h2>
+            <img src="assets/projectPictures/football/1.png" class="modal-img" alt="Premier League table prediction">
+            <img src="assets/projectPictures/football/2.png" class="modal-img" alt="Premier League match simulator">
+            <h3>The Challenge</h3>
+            <p>Predicting a single football match is hard; predicting an entire 380-match season is a massive data challenge. The goal was to build a model that could accurately simulate the 2021-22 season.</p>
+            <h3>My Solution</h3>
+            <p>
+               <br>1. <strong>Feature Engineering:</strong> Created a rich dataset from 4 prior seasons, engineering features for team form, player skills, home/away advantage, and team formations.
+               <br>2. <strong>Modeling:</strong> Trained an AdaBoost Classifier to predict the *specific scoreline* (home goals, away goals) for a given match-up, not just a win/loss.
+               <br>3. <strong>Simulation & Results:</strong> Ran the model to simulate all 380 matches. The final predicted table successfully identified 1st (Man City), 2nd (Liverpool), and 4th (Spurs) place, demonstrating the model's robustness.
+            </p>
+            <a href="[GitHub Link]" class="modal-link" target="_blank">View Code on GitHub</a>
+        </div>
+
+        <div id="modal-5-content">
+            <h2>Organic Food Store SKU & Sales Analysis</h2>
+            <img src="assets/projectPictures/OrganicFoodStore/market basket analysis.png" class="modal-img" alt="Market basket analysis">
+            <img src="assets/projectPictures/OrganicFoodStore/rainfal 2.png" class="modal-img" alt="Rainfall analysis 1">
+            <img src="assets/projectPictures/OrganicFoodStore/rainfall analysis.png" class="modal-img" alt="Rainfall analysis 2">
+            <h3>The Challenge</h3>
+            <p>An organic food store was struggling with an oversized product line and a mysterious seasonal sales drop, impacting profitability and inventory management.</p>
+            <h3>My Solution</h3>
+            <p>
+               <br>1. <strong>SKU Optimization:</strong> I collected, cleaned, and analyzed business data, using clustering to identify underperforming SKUs and recommend a reduction in product diversity.
+               <br>2. <strong>Cross-Selling:</strong> Leveraged Market Basket Analysis (Apriori algorithm) to find "items-bought-together" associations, creating a data-driven foundation for new marketing campaigns.
+               <br>3. <strong>Data-Driven Solution:</strong> Trend analysis confirmed a sales drop correlated with the monsoon. I proposed a new delivery channel (less correlated with weather than walk-ins) to stabilize revenue.
+            </p>
+            <a href="[GitHub Link]" class="modal-link" target="_blank">View Code on GitHub</a>
+        </div>
+
+        <div id="modal-6-content">
+            <h2>User Retention & Churn Analysis for App Startup</h2>
+            <img src="assets/projectPictures/2ByteCode/Average screen time per screen analysis.jpg" class="modal-img" alt="Screen time analysis">
+            <img src="assets/projectPictures/2ByteCode/Screen vissits analysis.jpg" class="modal-img" alt="Screen visits analysis">
+            <img src="assets/projectPictures/2ByteCode/Screens at which user ecited apps.jpg" class="modal-img" alt="User exit analysis">
+            <img src="assets/projectPictures/2ByteCode/Session analysis.jpg" class="modal-img" alt="Session analysis">
+            <h3>The Challenge</h3>
+            <p>A new app startup had user data but no insight into *how* users were interacting with the app, where they were dropping off, or why they were churning.</p>
+            <h3>My Solution</h3>
+            <p>
+               <br>1. <strong>Behavior Analysis:</strong> Used Python to conduct screen frequency, session, and churn/retention analysis, revealing intricate user engagement patterns.
+               <br>2. <strong>Identify Drop-offs:</strong> Pinpointed specific app screens with high exit rates and low average session times.
+               <br>3. <strong>Actionable Strategies:</strong> Proposed data-driven solutions: reducing ad frequency on high-drop-off screens, optimizing user flow, and classifying users for targeted re-engagement campaigns.
+            </p>
+            <a href="[GitHub Link]" class="modal-link" target="_blank">View Code on GitHub</a>
+        </div>
+
+        <div id="modal-7-content">
+            <h2>Movie Recommendation System</h2>
+            <img src="assets/projectPictures/movie recommender system/1.png" class="modal-img" alt="Movie recommender UI 1">
+            <img src="assets/projectPictures/movie recommender system/1.png" class="modal-img" alt="Movie recommender UI 2">
+            <img src="assets/projectPictures/movie recommender system/cosine similarity.png" class="modal-img" alt="Cosine similarity diagram">
+            <h3>The Challenge</h3>
+            <p>To build a high-speed, content-based recommendation system that could instantly suggest relevant movies to a user on a mobile app.</p>
+            <h3>My Solution</h3>
+            <p>
+               <br>1. <strong>NLP Vectorization:</strong> Used NLP (TF-IDF) to convert movie details (plot summary, cast, director, genres) into a numerical feature matrix.
+               <br>2. <strong>Similarity Model:</strong> Applied Cosine Similarity to this matrix to calculate a "similarity score" between every movie, allowing for instant lookups.
+               <br>3. <strong>Deployment:</strong> Built a lightweight Flask REST API to serve the model. When the app sends a movie title, the API returns a JSON list of the top 10 most similar movies (with posters, cast, etc.) in under a second.
+            </p>
+            <a href="[GitHub Link]" class="modal-link" target="_blank">View Code on GitHub</a>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
