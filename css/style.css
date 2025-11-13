@@ -91,16 +91,31 @@ a:hover {
     color: var(--primary-color);
 }
 
-/* ===== 3. Page Sections (WIDER) ===== */
-.content-wrapper {
-    max-width: 1400px; /* Wide layout */
-    margin: 0 auto;
-    padding: 0 2rem;
+.modal-img-small {
+    max-width: 48%; /* Makes the image take up less space */
+    height: auto;
 }
 
+/* ===== 3. Page Sections (WIDER) ===== */
+/* We will ensure the content-wrapper has horizontal padding on all screen sizes. */
+.content-wrapper {
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding-left: 2rem; /* Ensure 2rem of space on the left */
+    padding-right: 2rem; /* Ensure 2rem of space on the right */
+}
+
+/* Update the general rule for ALL sections */
 .page-section {
-    padding-top: 80px;
+    /* Changed default padding to a small value (10px used here) */
+    padding-top: 10px; 
     margin-bottom: 4rem;
+}
+
+/* ADD THIS NEW RULE to specifically target the very first section */
+.page-section:first-of-type {
+    /* Apply the large padding (80px) only to the first section */
+    padding-top: 80px; 
 }
 
 /* ===== 4. About Me Section ===== */
