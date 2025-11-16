@@ -96,6 +96,24 @@ a:hover {
     height: auto;
 }
 
+.img-caption {
+    font-size: 11px;
+    color: #777;
+    text-align: center;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+
+.optiver-images img {
+    width: 100%;           /* full width of column */
+    height: 120px;         /* fixed height */
+    object-fit: contain;
+    transform: scale(1.15); /* Increase size by 15% */
+}
+
+
+
 /* ===== 3. Page Sections (WIDER) ===== */
 /* We will ensure the content-wrapper has horizontal padding on all screen sizes. */
 .content-wrapper {
@@ -177,7 +195,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 2.5rem;
 }
 
