@@ -190,6 +190,20 @@ a:hover {
     border-color: var(--primary-color);
 }
 
+
+/* Make HR Analytics GIF bigger */
+.hr-analytics-gif {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Or if you want to increase the container size */
+.project-small .project-image:has(.hr-analytics-gif) {
+    max-height: 700px; /* adjust as needed */
+}
+
 /* ===== 5. Projects Section (Updated 1-Column) ===== */
 .filter-buttons {
     display: flex;
