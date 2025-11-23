@@ -27,6 +27,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
+        transform: scale(0.85);
+    transform-origin: top center;
 }
 
 h1, h2, h3 {
@@ -117,7 +119,7 @@ a:hover {
 /* ===== 3. Page Sections (WIDER) ===== */
 /* We will ensure the content-wrapper has horizontal padding on all screen sizes. */
 .content-wrapper {
-    width: min(70vw, 1400px);  /* content is 80% of screen, but never more than 1400px */
+    width: min(85vw, 1400px);  /* content is 80% of screen, but never more than 1400px */
     margin: 0 auto;
     padding-inline: 2rem;      /* small inner padding so text doesn't touch edge of card */
 }
