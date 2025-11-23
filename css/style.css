@@ -464,7 +464,8 @@ a:hover {
 /* ===== 8. Responsive Design ===== */
 @media (max-width: 900px) {
     .content-wrapper {
-        padding: 0 1rem; 
+        width: 90vw;          /* a bit wider on mobile */
+        padding-inline: 1rem; /* small inner padding */
     }
 
     .about-container {
