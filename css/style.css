@@ -117,7 +117,7 @@ a:hover {
 /* ===== 3. Page Sections (WIDER) ===== */
 /* We will ensure the content-wrapper has horizontal padding on all screen sizes. */
 .content-wrapper {
-    width: min(80vw, 1400px);  /* content is 80% of screen, but never more than 1400px */
+    width: min(70vw, 1400px);  /* content is 80% of screen, but never more than 1400px */
     margin: 0 auto;
     padding-inline: 2rem;      /* small inner padding so text doesn't touch edge of card */
 }
