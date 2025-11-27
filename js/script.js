@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // ===== 2. Project Modal (Popup) =====
     const modal = document.getElementById("project-modal");
-    const modalButtons = document.querySelectorAll(".modal-btn");
+    const modalButtons = document.querySelectorAll(".modal-btn[data-modal-id]");
     const modalClose = document.querySelector(".modal-close");
     const modalBody = document.getElementById("modal-body");
 
